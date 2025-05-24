@@ -59,8 +59,11 @@ export default function Home() {
       </div>
       </section>
 
-        
-      {/* Accomplishments and Publications */}
+      
+      {/* Accomplishments and Publications 
+      TODO - Update this section to be in a component, then render here
+      Lag of home page too big right now
+      */}
       <section id="how-it-works" className="py-20 bg-[#b0d6dd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
