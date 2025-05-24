@@ -139,32 +139,31 @@ export default function Home() {
               <div className="relative md:flex items-center">
                 <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-sky-950 rounded-full z-10"></div>
                 <div className="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
-                  <h3 className="text-xl font-bold font-heading mb-2">3. Track and Log Progress</h3>
-                  <p className="text-gray-600">
-                    Log your completed exercises, including weights, sets, and reps. Take notes about your performance and feelings.
+                  <h3 className="text-xl font-bold font-heading mb-2 text-sky-950">2021 - Transition to Software</h3>
+                  <p className="text-sky-950">
+                    In 2021 I started to recognize the value of software and started to pivot my career. At Ford I was able to accomplish the following:
                   </p>
+                  <ul className="text-sky-950">
+                    <li>Developed GCP pipeline via PubSub to Bigquery to stream vehicle logger data from fleet vehicles allowing
+                    realtime analysis of customer data</li>
+                    <li> Implemented a vision-based regression algorithm analyze vehicle suspension dynamics to detect early-stage component faults</li>
+                    <li> Advanced the development of an autoencoder algorithm accuracy by 30% utilizing sound data in autonomous
+                    vehicles to detect early-stage wheel bearing faults.</li>
+                  </ul>
                 </div>
                 <div className="md:w-1/2 md:pl-12">
                   <div className="bg-gray-100 rounded-lg p-4 md:hidden mb-3">
                     <div className="font-bold text-primary">Step 3</div>
                   </div>
-                  <div className="rounded-lg overflow-hidden bg-white shadow-md">
+                  <div className="rounded-lg overflow-hidden bg-white shadow-md hidden_transition_right">
                     <div className="bg-gray-50 p-4 border-b flex items-center">
-                      <div className="h-8 w-8 bg-primary rounded-full flex items-center justify-center text-white mr-3">3</div>
-                      <div className="font-medium text-gray-900">Exercise Logging</div>
+                      <div className=" text-gray-900 font-bold items-center">Beginning of Coding and Youtube</div>
                     </div>
-                    <div className="p-4">
-                      <div className="space-y-3">
-                        <div className="bg-gray-50 p-2 rounded-md">
-                          <div className="font-medium">Bench Press</div>
-                          <div className="text-sm text-gray-500">4 sets • 10-12 reps • 135 lbs</div>
-                        </div>
-                        <div className="bg-gray-50 p-2 rounded-md">
-                          <div className="font-medium">Lat Pulldown</div>
-                          <div className="text-sm text-gray-500">3 sets • 12 reps • 120 lbs</div>
-                        </div>
-                     
-                      </div>
+                    <div className="p-1 h-[300px]">
+                      <img
+                      src="coding.png" title="Coding"
+                      className="object-cover w-full h-full rounded-2xl"
+                      />
                     </div>
                   </div>
                 </div>
