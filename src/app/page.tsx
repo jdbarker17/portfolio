@@ -8,6 +8,7 @@ import { Lato } from "next/font/google";
 import Cards from "./components/cards/Cards";
 import { ArrowRight, Dumbbell, LineChart, Users, CheckCircle, Calendar, Activity } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import Socials from "./components/social_media/socials";
 
 
 
@@ -40,8 +41,8 @@ export default function Home() {
 
         {/* Left Text */}
         <div className="absolute top-1/3 transform -translate-y-3/4 text-white text-6xl space-y-3 hidden_transition_left">
-          <p className="ml-12 font-black text-8xl">Howdy {'\u{1F920}'}</p>
-          <p className="ml-14 font-lato text-6xl hidden_transition_left">I'm Jon Barker</p>
+          <p className="ml-[10vh] font-black text-8xl">Howdy {'\u{1F920}'}</p>
+          <p className="ml-[10vh] font-lato text-6xl hidden_transition_left">I'm Jon Barker</p>
         </div>
 
         {/* Right Text */}
@@ -50,6 +51,9 @@ export default function Home() {
           <p>Bringing 7 years of professional experience to the table</p>
           <div>
           <p>Projects below span work from hardware to software including ML and Data Engineering</p>
+          </div>
+          <div>
+            <Socials/>
           </div>
         </div>
       </div>

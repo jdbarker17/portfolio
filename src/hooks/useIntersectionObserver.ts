@@ -11,7 +11,9 @@ export function useIntersectionObserver(selector: string, callback?: (el: Elemen
           entry.target.classList.add('show');
           if (callback) callback(entry.target);
         } else {
-          entry.target.classList.remove('show');
+
+            // Delete the following comment if you want to have the animation happen each time
+          //entry.target.classList.remove('show');
         }
       });
     });
