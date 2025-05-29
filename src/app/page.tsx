@@ -40,17 +40,23 @@ export default function Home() {
         />
 
         {/* Left Text */}
-        <div className="absolute top-1/3 transform -translate-y-3/4 text-white text-6xl space-y-3 hidden_transition_left">
-          <p className="ml-[10vh] font-black text-8xl">Howdy {'\u{1F920}'}</p>
-          <p className="ml-[10vh] font-lato text-6xl hidden_transition_left">I'm Jon Barker</p>
+        <div className="absolute top-1/3 w-2/5        /* desktop: 40% width */
+            sm:w-3/5     /* tablet: 60% */
+            xs:w-full    /* phones: 100% */
+            transform -translate-y-3/4 text-white text-6xl space-y-3 hidden_transition_left">
+          <p className="ml-[10vh] font-black md:text-8xl sm:text-5xl xs:text-4xl">Howdy {'\u{1F920}'}</p>
+          <p className="ml-[10vh] font-lato md:text-6xl sm:text-3xl xs:text-2xl hidden_transition_left">I'm Jon Barker</p>
         </div>
 
         {/* Right Text */}
-        <div className="absolute right-1 top-1/2 transform -translate-y-1/2 text-white hidden_transition_right max-w-[700px]">
-          <p className="text-5xl"> Multi-Disciplinary Engineer</p>
+        <div className="absolute right-1 top-1/2 w-2/5         /* desktop: 40% width */
+          sm:w-3/5      /* tablet: 60% */
+          xs:w-full     /* phones: 100% */
+          transform -translate-y-1/2 text-white hidden_transition_right max-w-[700px]">
+          <p className="md:text-5xl sm:text-3xl xs:text-2xl"> Multi-Disciplinary Engineer</p>
           <ul>
-            <li>20-Time Patented Inventor with seven years of automotive experience in hardware and software</li>
-            <li>Professional and personal projects showcasing:
+            <li className="md:text-l sm:text-base xs:text-sm">20-Time Patented Inventor with seven years of automotive experience in hardware and software</li>
+            <li className="md:text-l sm:text-base xs:text-sm">Professional and personal projects showcasing:
               <ul className="list-disc list-inside marker:text-white pl-4 ">
                 <li>Machine learning</li>
                 <li>Data pipelines</li>
