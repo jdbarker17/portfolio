@@ -46,12 +46,24 @@ export default function Home() {
         </div>
 
         {/* Right Text */}
-        <div className="absolute right-1 top-1/2 transform -translate-y-1/2 text-white hidden_transition_right">
+        <div className="absolute right-1 top-1/2 transform -translate-y-1/2 text-white hidden_transition_right max-w-[700px]">
           <p className="text-5xl"> Multi-Disciplinary Engineer</p>
-          <p>Bringing 7 years of professional experience to the table</p>
+          <ul>
+            <li>20-Time Patented Inventor with seven years of automotive experience in hardware and software</li>
+            <li>Professional and personal projects showcasing:
+              <ul className="list-disc list-inside marker:text-white pl-4 ">
+                <li>Machine learning</li>
+                <li>Data pipelines</li>
+                <li>Hardware design</li>
+                <li>Software development</li>
+                </ul>
+              </li>
+          </ul> 
+                
+          {/*<p>7+ Years of Automotive Engineering Experience spanning hardware and software</p>
           <div>
-          <p>Projects below span work from hardware to software including ML and Data Engineering</p>
-          </div>
+          <p>Explore my professional and personal projects, spanning machine learning, data pipelines, hardware design, and software development</p>
+          </div>*/}
           <div>
             <Socials/>
           </div>
@@ -143,10 +155,11 @@ export default function Home() {
                 <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-sky-950 rounded-full z-10"></div>
                 <div className="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
                   <h3 className="text-xl font-bold font-heading mb-2 text-sky-950">2021 - Transition to Software</h3>
-                  <p className="text-sky-950">
-                    In 2021 I started to recognize the value of software and started to pivot my career. At Ford I was able to accomplish the following:
+                  <p className="text-gray-600 text-center">
+                    In 2021 I started to recognize the value of software and started to pivot my career.
                   </p>
-                  <ul className="text-sky-950">
+                  <p className="text-gray-600 text-center"> Notable Technical Accomplishments:</p>
+                  <ul className="text-gray-600 list-disc list-inside marker:text-white pl-6 mt-1 space-y-1 text-left">
                     <li>Developed GCP pipeline via PubSub to Bigquery to stream vehicle logger data from fleet vehicles allowing
                     realtime analysis of customer data</li>
                     <li> Implemented a vision-based regression algorithm analyze vehicle suspension dynamics to detect early-stage component faults</li>
@@ -177,15 +190,21 @@ export default function Home() {
                 <div className="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
                   <div className="rounded-lg overflow-hidden bg-white shadow-md">
                     <div className="bg-gray-50 p-4 border-b flex items-center md:justify-end">
-                      <div className="h-8 w-8 bg-primary rounded-full flex items-center justify-center text-white mr-3 md:order-2 md:ml-3 md:mr-0">4</div>
-                      <div className="font-medium text-gray-900 md:order-1">Performance Analytics</div>
+                      <div className=" text-gray-900 font-bold md:order-1 align-middle">V0 of my first product</div>
                     </div>
                     <div className="p-4">
-                      <div className="h-32 bg-gray-50 rounded-md flex items-center justify-center">
-                        <LineChart className="h-16 w-16 text-primary opacity-50" />
+                      <div className="h-80 bg-gray-50 rounded-md flex items-center justify-center">
+                       
+                      <video
+                        src="/smartweight_animation.mp4"
+                        autoPlay
+                        muted
+                        className="h-full w-full object-cover"
+                      />
+                       
                       </div>
                       <div className="mt-2 text-sm text-gray-600 text-center md:text-right">
-                        Visualize progress over time with detailed charts
+                        All components designed and modeled in Fusion360
                       </div>
                     </div>
                   </div>
@@ -194,9 +213,10 @@ export default function Home() {
                   <div className="bg-gray-100 rounded-lg p-4 md:hidden mb-3">
                     <div className="font-bold text-primary">Step 4</div>
                   </div>
-                  <h3 className="text-xl font-bold font-heading mb-2">4. Review Analytics & Adjust</h3>
+                  <h3 className="text-xl font-bold font-heading mb-2 text-sky-950">2024+ - Startups and Beyond</h3>
                   <p className="text-gray-600">
-                    Analyze your performance data to identify trends and areas for improvement. Trainers can provide feedback based on real data.
+                    I dream of building my own company, and have taken strides in making that dream reality. Shown here is a weight collar that I've designed
+                    the CAD, electrical hardware, software, and algorithms to make fuction. Bringing to market in late 2024.
                   </p>
                 </div>
               </div>
