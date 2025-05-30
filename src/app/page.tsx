@@ -113,7 +113,7 @@ export default function Home() {
                   <div className="rounded-lg overflow-hidden bg-white shadow-md transform-trans">
                     <div className="bg-gray-50 p-4 border-b flex items-center">
                       <div className="h-8 w-8 bg-primary rounded-full flex items-center justify-center text-white mr-3">1</div>
-                      <div className="font-medium text-gray-900">Placeholder if I want it</div>
+                      <div className="font-bold text-gray-900">The First Electric F-150</div>
                     </div>
                     <div className="p-1 overflow-hidden h-[200px] flex justify-center items-center">
                       <iframe className= "justify-center mx-auto object-cover w-full h-full" 
@@ -128,12 +128,12 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="relative md:flex items-center ">
+              <div className="relative md:flex items-center">
                 <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-sky-950 rounded-full z-10"></div>
                 <div className="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right hidden_transition_left">
                   <div className="rounded-lg overflow-hidden bg-white shadow-md">
                     <div className="bg-gray-50 p-4 border-b flex items-center md:justify-center">
-                      <div className="font-bold text-gray-900 md:order-1 items-center">Mustang Mach-E</div>
+                      <div className="font-bold text-gray-900 md:order-1 text-right ">Mustang Mach-E</div>
                     </div>
                     {/* Mach E Image within Container */}
                     <div className="p-1 overflow-hidden h-[200px] flex justify-center items-center">
@@ -230,31 +230,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Section Below to hold all of the Project I've build */}  
-      <section className="w-full mx-auto bg-yellow-50" >
-        <div className="text-5xl font-extrabold flex justify-center bg-yellow-50"> Projects</div>
-        <div className= "project_card_holder flex justify-center space-x-10 mt-6 mb-6">
-          
-          {/* Project #1 */}
-          <div> 
-            <Cards image="hamms.jpeg" text="test1"/>
-          </div>
-          
-
-           {/* Project #2 */}
-          <div>
-            <Cards image="hamms.jpeg" text="test1"/>
-          </div>
-
-           {/* Project #3 */}
-          <div>
-            <Cards image="hamms.jpeg" text="test1"/>
-          </div>
-        </div>
-      </section>
-
-
     </>
   );
 }
